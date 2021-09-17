@@ -1,0 +1,218 @@
+<!--
+ * @Desc: This is desc
+ * @Version: v0.0.1
+ * @Author: Chenxue
+ * @Date: 2021-08-05 18:56:41
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+
+<script>
+  (() => {
+    let sUserAgent = navigator.userAgent.toLowerCase();
+    let bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    let bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    let bIsMidp = sUserAgent.match(/midp/i) == "midp";
+    let bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+    let bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+    let bIsAndroid = sUserAgent.match(/android/i) == "android";
+    let bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+    let bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+    if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+      //跳转移动端页面
+      // window.location.href = 'http://cryptocoolcat.info/mobile/index.html'
+    } else {
+      //跳转pc端页面
+      window.location.href = '../punk-cookie/index.html'
+    }
+  })()
+  !(function (doc, win) {
+    var docEle = doc.documentElement,
+      evt = "onorientationchange" in window ? "orientationchange" : "resize",
+      fn = function () {
+        var width = docEle.clientWidth;
+        width && (docEle.style.fontSize = 10 * width / 75 + "px");
+      };
+
+    win.addEventListener(evt, fn, false);
+    doc.addEventListener("DOMContentLoaded", fn, false);
+
+  }(document, window))
+</script>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="static/js/7bc47f72c669457c90069f4a0e022662.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FFDWPLGK5N');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PunkCookie</title>
+  <link rel="shortcut icon" href="./logo.ico">
+  <link rel="stylesheet" href="static/css/index.min.css">
+  <link rel="stylesheet" href="static/css/style.min.css">
+  <link rel="stylesheet" href="static/css/dialog.min.css">
+</head>
+
+<body>
+  <div class="center">
+    <div class="img1">
+      <a href="javascript:;"><img class="img1_logo1"
+          src="static/picture/logo1.png" alt=""></a>
+      <a href="#mint"><img class="img1_mint"
+          src="static/picture/mint.png" alt=""></a>
+      <a href="./grant.html"><img class="img1_grant"
+          src="static/picture/grant.png" alt=""></a>
+      <a href="#faq"><img class="img1_FAQ" src="static/picture/faq.png"
+          alt=""></a>
+      <a href=""><img class="img1_twitter1"
+          src="static/picture/twitter1.png" alt="" onclick="return false"></a>
+      <a href=""> <img class="img1_discord1"
+          src="static/picture/discord1.png" alt="" onclick="return false"></a>
+
+      <img class="img1_mint1 banner_mint"
+        src="static/picture/mint1.png" alt="">
+      <div class="money" id="address">
+        <img src="static/picture/money.png" alt="">
+        <span class="account" id="account"></span>
+      </div>
+      <img src="static/picture/01.png" alt="" class="doge">
+      <img src="static/picture/02.png" alt="" class="doge hidden">
+      <img src="static/picture/03.png" alt="" class="doge hidden">
+      <img src="static/picture/04.png" alt="" class="doge hidden">
+      <img src="static/picture/05.png" alt="" class="doge hidden">
+      <img src="static/picture/06.png" alt="" class="doge hidden">
+      <img src="static/picture/07.png" alt="" class="doge hidden">
+      <img src="static/picture/08.png" alt="" class="doge hidden">
+      <img src="static/picture/09.png" alt="" class="doge hidden">
+      <img src="static/picture/10.png" alt="" class="doge hidden">
+      <img src="static/picture/11.png" alt="" class="doge hidden">
+      <img src="static/picture/12.png" alt="" class="doge hidden">
+      <img src="static/picture/13.png" alt="" class="doge hidden">
+      <img src="static/picture/14.png" alt="" class="doge hidden">
+      <img src="static/picture/15.png" alt="" class="doge hidden">
+      <img src="static/picture/16.png" alt="" class="doge hidden">
+    </div>
+
+    <div class="img2" id="faq">
+      <p class="img2_1">What Is PunkCookie?</p>
+      <p class="img2_2">The PunkCookie are 10,000 uniquely generated characters. No two are exactly alike, and each 
+      	one of them can be officially owned by a single person on the Ethereum blockchain. Via market you can buy, bid on, 
+      	and offer punks for sale. Each PunkCookie is unique and precious.  Ownership includes your PunkCookie's creative and commercial rights.
+      	The PunkCookie are 24x24 3D pixel cookie art , generated algorithmically. Most are punky-looking guys and girls, 
+        but there are a few rarer types mixed in: Apes, Zombies and even the odd Alien.</p>
+      <img class="img2_banner2" src="static/picture/banner2.png"
+        alt="">
+    </div>
+
+    <div class="img3">
+      <p class="img3_1">What Makes PunkCookie So Awesome?</p>
+      <div class="img3_2">
+        <img src="static/picture/banner3_1.png" alt="">
+        <p class="img3_title">Equal Distribution</p>
+        <p class="img3_text">Some NFT Collections withhold a portion of the more valuable items for certain reasons,
+            while every PunkCookie will be released to the market at launch.</p>
+      </div>
+      <div class="img3_3">
+        <img src="static/picture/banner3_2.png" alt="">
+        <p class="img3_title">Copyright Transferred</p>
+        <p class="img3_text">Once you buy a PunkCookie NFT, you are transferred full ownership and copyrights! You could do
+            whatever you want!</p>
+      </div>
+      <div class="img3_4">
+        <img src="static/picture/banner3_3.png" alt="">
+        <p class="img3_title">ERC-721</p>
+        <p class="img3_text">The NFT contract the governs ownership is a standard ERC-721 that works with any compatible service or exchange.</p>
+      </div>
+      <img class="img3_banner3" src="static/picture/banner3.png"
+        alt="">
+    </div>
+
+    <div id="mint" class="img4">
+      <div class="img4_1">FIRST ROUND SALE (1000)</div>
+      <div class="img4_2">Mint</div>
+      <div class="img4_3">Only <span id="eachPrice">0.05</span> eth each!</div>
+      <div class="img4_4">NFT Community Grant</div>
+      <div class="img4_5">We are 100% lover and supporter of NFT community. That's why we decide to reward the community with 500 free
+        PunkCookie NFT to the selected NFT owners.
+        <br><br>
+        Any NFT holder of CryptoPunks can mint one PunkCookie for free, limit to one
+        per wallet.
+      </div>
+      <div class="img4_6">First come, first serve. </div>
+      <img class="img4_banner4" src="static/picture/banner4.png"
+        alt="">
+      <a href="https://testnets.opensea.io/collection/punkcookie" target="_blank">
+        <img src="static/picture/element.png" class="img4_element"
+          alt=""></a>
+      <img class="img4_mint2 banner_mint"
+        src="static/picture/mint2.png" alt="">
+      <img class="img4_grant1 gift" src="static/picture/grant1.png"
+        alt="">
+    </div>
+
+
+    <div class="img5">
+      <p class="img5_1">PunkCookie Road Map</p>
+      <p class="img5_2">Airdrop</p>
+      <p class="img5_3">We will select the 200 PunkCookie owners and each of them will get 1 PunkCookie for free.</p>
+      <p class="img5_4">First Community ETH Raffle</p>
+      <p class="img5_5">Once we sell out 30 % of PunkCookie, PunkCookie owners can participate in a community exclusive
+        raffle to win some Ethereum. Your luck value will be in great value now!</p>
+      <p class="img5_6">Milestone</p>
+      <p class="img5_7">We will launch a game in which all holders could play hard and earn hard. What's more, every PunkCookie
+        is really lucky PunkCookie which can help you to earn more money in a more rapid way.</p>
+      <p class="img5_8">New Generation</p>
+      <p class="img5_9">New generation will be born which will absolutely blow your mind.</p>
+      <img class="img5_banner5" src="static/picture/banner5.png"
+        alt="">
+    </div>
+
+    <div class="img6">
+      <p class="img6_1">About US ?</p>
+      <p class="img6_2">
+        A collaborative NFT project for PunkCookie lovers all around the world.
+      </p>
+      <!-- <p class="img6_3">★</p> -->
+      <p class="img6_4">Follow US</p>
+      <img class="img6_banner6" src="static/picture/banner6.png"
+        alt="">
+
+      <a href=""><img class="img6_twitter2"
+          src="static/picture/twitter2.png" alt="" onclick="return false"></a>
+      <a href=""><img class="img6_discord2"
+          src="static/picture/discord2.png" alt="" onclick="return false"></a>
+
+      <img class="img6_logo2" src="static/picture/logo2.png" alt="">
+    </div>
+  </div>
+
+  <script>
+    var index = 1;
+    setInterval(function () {
+      Array.from(document.querySelectorAll('.doge')).map((item, i) => {
+        if (i == index) {
+          Array.from(document.querySelectorAll('.doge'))[i].setAttribute('class', 'doge');
+        } else {
+          Array.from(document.querySelectorAll('.doge'))[i].setAttribute('class', 'doge hidden');
+        }
+      })
+      if (index < 15) {
+        index++;
+      } else {
+        index = 0;
+      }
+    }, 1500)
+  </script>
+  <script src="static/js/web3.min.js"></script>
+  <script src="static/js/mobile.js"></script>
+</body>
+
+</html>
